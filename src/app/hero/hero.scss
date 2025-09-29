@@ -81,9 +81,9 @@
         padding: 15px 30px;
         animation: pulse 2s infinite;
         background: #70E61C;
-        color: #000;
+        color: #FFFFFF;
         text-decoration: none;
-        border-radius: 25px;
+        border-radius: 10px;
         font-weight: 500;
         transition: all 0.3s ease;
         display: inline-block;
@@ -92,19 +92,5 @@
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(112, 230, 28, 0.3);
         }
-    }
-}
-
-@keyframes pulse {
-    0% {
-        box-shadow: 0 0 0 0 rgba(112, 230, 28, 0.7);
-    }
-
-    70% {
-        box-shadow: 0 0 0 10px rgba(112, 230, 28, 0);
-    }
-
-    100% {
-        box-shadow: 0 0 0 0 rgba(112, 230, 28, 0);
     }
 }
