@@ -5,12 +5,11 @@
     align-items: center;
     background-color: #141D2F;
     background-image: url('/28. Hero Background.png');
-    background-position: center;
+    background-position: center 50%;
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
     margin-top: 80px;
-    width: 100%;
 }
 
 .container {
@@ -39,11 +38,12 @@
 
     .vertical-text {
         color: #FFFFFF;
-        font-size: 16px;
+        font-size: 64px;
         font-weight: 400;
-        letter-spacing: 2px;
+        letter-spacing: 0%;
         text-transform: uppercase;
         margin: 0;
+        rotate: -90deg;
     }
 }
 
@@ -53,19 +53,21 @@
 
     .name {
         display: block;
-        font-size: 48px;
+        font-size: 90px;
         font-weight: 700;
         color: #ffffff;
-        line-height: 1.1;
+        line-height: 1.2;
+        font-style: bold;
         margin: 0 0 10px 0;
     }
 
     .role {
         display: block;
-        font-size: 24px;
-        font-weight: 500;
+        font-size: 58px;
+        font-weight: 400;
         color: #9747FF;
-        letter-spacing: 3px;
+        letter-spacing: 0%;
+        line-height: 1.2;
         text-transform: uppercase;
         margin: 0;
     }
