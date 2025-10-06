@@ -1,21 +1,24 @@
-<section>
-    <img src="/IconHtml.png" alt="html">
-    <img src="/IconCss.png" alt="css">
-    <img src="/IconJavaScript.png" alt="javascript">
-    <img src="/IconTypescript.png" alt="typescript">
-    <img src="/IconAngular.png" alt="angular">
-    <img src="/IconFirebase.png" alt="firebase">
-    <img src="/IconGit.png" alt="git">
-    <img src="/IconApi.png" alt="api">
-    <img src="/IconScrum.png" alt="scrum">
-    <img src="/IconMaterialDesign.png" alt="materialdesign">
-    <img src="/IconContinuallyLearning.png" alt="learning">
-</section>
+<div class="skills-container">
+    <section class="skills-icons">
+        <div *ngFor="let row of skillRows" class="skill-row">
+            <div *ngFor="let skill of row" class="skill-icon">
+                <img [src]="skill.icon" [alt]="skill.alt" />
+                <p class="skill-label">{{ skill.label }}</p>
+            </div>
+        </div>
+    </section>
 
-<section>
-    <h2>My Skills</h2>
-    <p>HTML, CSS, JavaScript, TypeScript, Angular, Firebase, Git, REST APIs, Scrum, Material Design, Continual Learning</p>
-    <h4>Looking for another skill?</h4>
-    <p>Reveal enthusiasm for learning new technologies and frameworks!</p>
-    <button>Get in touch</button>
-</section>
+    <section class="skills-text">
+        <h2>My Skills</h2>
+        <p class="skills-description">HTML, CSS, JavaScript, TypeScript, Angular, Firebase, Git, REST APIs, Scrum, Material Design, Continual Learning</p>
+    
+        <h4>Looking for <span class="highlight">another skill?</span></h4>
+        <p class="enthusiasm">
+            Reveal enthusiasm for learning new technologies and frameworks!
+        </p>
+
+        <div class="cta-section">
+          <a href="#contact" class="btn btn-primary">Get in touch</a>
+        </div>
+    </section>
+</div>
