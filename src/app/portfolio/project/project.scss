@@ -1,10 +1,12 @@
 .project-card {
-    background: rgba(255, 255, 255, 0.05);
+    background: #141D2F;
     border: 2px solid rgba(112, 230, 28, 0.3);
     border-radius: 20px;
     padding: 30px;
     transition: all 0.3s ease;
     cursor: pointer;
+    width: 600px;
+    height: 600px;
 
     &:hover {
         transform: translateY(-5px);
@@ -16,7 +18,7 @@
 .project-image {
     .laptop-mockup {
         position: relative;
-        background: #2C3E50;
+        background: #141d2f;
         border-radius: 10px 10px 0 0;
         padding: 15px 15px 0;
         box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
@@ -25,7 +27,7 @@
             content: '';
             display: block;
             height: 15px;
-            background: #34495E;
+            background: #141d2f;
             border-radius: 0 0 10px 10px;
             margin: 0 -15px;
         }

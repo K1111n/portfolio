@@ -1,4 +1,46 @@
-* {
-    margin: 0;
+.portfolio-container {
     background-color: #141D2F;
+    padding: 100px 50px;
+    min-height: 100vh;
+}
+
+.portfolio-header {
+    text-align: left;
+    margin-bottom: 60px;
+
+    h2 {
+        font-family: Poppins, sans-serif;
+        font-size: 90px;
+        font-weight: 700;
+        color: #FFFFFF;
+        line-height: 1.2;
+        margin-bottom: 20px;
+        position: relative;
+        padding-left: 80px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 60px;
+            height: 4px;
+            background: #9747FF;
+        }
+    }
+
+    .portfolio-subtitle {
+        font-size: 16px;
+        color: #FFFFFF;
+        opacity: 0.9;
+        max-width: 500px;
+        line-height: 1.6;
+    }
+}
+
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
 }
