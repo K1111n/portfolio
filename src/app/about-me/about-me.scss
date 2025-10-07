@@ -2,3 +2,127 @@
     margin: 0;
     background-color: #141D2F;
 }
+
+.about-container {
+    min-height: 100vh;
+    background: #141d2f;
+    padding: 80px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.text-section {
+    z-index: 2;
+}
+
+.main-title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+    letter-spacing: -0.02em;
+}
+
+.intro-text {
+    margin-bottom: 50px;
+}
+
+.intro-text p {
+    color: #E0E0E0;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+
+.cta-text {
+    font-weight: 500;
+    color: #FFFFFF !important;
+    margin-top: 25px !important;
+}
+
+.info-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.icon-wrapper {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    color: #ffffff;
+}
+
+.info-card p {
+    color: #d1d5db;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.image-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-backdrop {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #64f38c 100%);
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.6;
+    animation: pulse 4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+.profile-image {
+    position: relative;
+    width: 380px;
+    height: auto;
+    border-radius: 20px;
+    z-index: 2;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
