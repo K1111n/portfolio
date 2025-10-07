@@ -1,10 +1,12 @@
 * {
     margin: 0;
-    background-color: #141D2F;
+    padding: 0;
+    box-sizing: border-box;
+    background: #141d2f;
 }
 
 .header {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
