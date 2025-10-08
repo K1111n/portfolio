@@ -1,1 +1,37 @@
-<p>references works!</p>
+<section class="reference-section">
+  <div class="container">
+    <div class="testimonial-slider">
+      <div class="testimonial-card">
+        <div class="testimonial-content">
+          <p class="testimonial-text">
+            {{ currentTestimonial.text }}
+          </p>
+          <div class="testimonial-author">
+            <div class="author-name">{{ currentTestimonial.author }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider-navigation">
+      <button class="arrow-btn prev" (click)="previousSlide()">
+        <img src="/ArrowBack.png" alt="previous" />
+      </button>
+
+      <div class="slider-dots">
+        <img
+          *ngFor="let testimonial of testimonials; let i = index"
+          [src]="i === currentIndex ? '/TestimonialPurpleDot.png' : '/TestimonialGreenDot.png'"
+          [alt]="'Testimonial ' + (i + 1)"
+          class="dot-image"
+          [class.active]="i === currentIndex"
+          (click)="goToSlide(i)"
+        />
+      </div>
+
+      <button class="arrow-btn next" (click)="nextSlide()">
+        <img src="/ArrowForward.png" alt="next" />
+      </button>
+    </div>
+  </div>
+</section>
