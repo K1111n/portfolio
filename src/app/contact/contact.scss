@@ -1,20 +1,10 @@
 .contact-section {
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #2d1b69 100%);
+  background: #141D2F;
   padding: 4rem 2rem;
   position: relative;
-  border-top: 2px solid #70E61C;
 }
 
-.contact-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(circle, rgba(139, 92, 246, 0.3) 0%, transparent 70%);
-  pointer-events: none;
-}
+
 
 .contact-container {
   max-width: 1200px;
@@ -41,8 +31,6 @@
   opacity: 1;
 }
 
-
-
 .title-line {
   display: inline-block;
   width: 200px;
@@ -67,10 +55,14 @@
 .accent-line {
   position: absolute;
   left: 0;
-  top: 0;
-  width: 4px;
-  height: 80px;
+  top: 8px;
+  width: calc(100% - 20px);
+  height: 4px;
   background: #1CDAE6;
+  right: calc(100% - 0px);
+  width: 2000px;
+  transform: translateX(-100%);
+  margin-right: 20px;
 }
 
 .section-title {
@@ -168,7 +160,7 @@
   cursor: pointer;
   accent-color: #141D2F;
   background-color: #141D2F;
-  border: 1px solid #70E61C;
+  border: 3px solid #70E61C;
   border-radius: 2px;
 }
 
@@ -196,7 +188,7 @@
 
 .form-actions {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .submit-btn {
@@ -261,20 +253,80 @@
 }
 
 @media (max-width: 768px) {
+  .contact-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .contact-header {
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+
   .contact-title {
     font-size: 2.5rem;
   }
 
   .title-line {
-    width: 100px;
-    margin-left: 1rem;
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .contact-content {
+    gap: 2rem;
+  }
+
+  .contact-left {
+    padding-left: 1.5rem;
+  }
+
+  .accent-line {
+    height: 60px;
   }
 
   .section-title {
-    font-size: 24px;
+    font-size: 28px;
+  }
+
+  .section-description,
+  .section-cta {
+    font-size: 14px;
+  }
+
+  .form-input,
+  .form-textarea {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .privacy-checkbox {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .privacy-checkbox input[type="checkbox"] {
+    margin-top: 2px;
+    flex-shrink: 0;
+  }
+
+  .privacy-checkbox label {
+    font-size: 12px;
   }
 
   .submit-btn {
     width: 100%;
+    max-width: 253px;
+    margin: 0 auto;
+  }
+
+  .form-actions {
+    justify-content: center;
+  }
+
+  .scroll-top-btn {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 45px;
+    height: 45px;
   }
 }
