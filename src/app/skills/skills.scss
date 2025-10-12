@@ -27,18 +27,17 @@
         position: absolute;
         left: -150px;
         top: 50%;
-        transform: translate(-50%);
+        transform: translateY(-50%);
         width: 400px;
         height: 400px;
-        background: radial-gradient(circle, rgba(112, 230, 28, 0.2) 0%, transparent 70%);
         pointer-events: none;
     }
 
-    .skills-row {
+    .skill-row {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         gap: 40px;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
     }
 
@@ -87,6 +86,7 @@
         font-size: 16px;
         line-height: 1.6;
         opacity: 0.9;
+        margin-bottom: 40px;
     }
 
     h4 {

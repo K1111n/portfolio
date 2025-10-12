@@ -1,24 +1,28 @@
 <div class="skills-container">
-    <section class="skills-icons">
-        <div *ngFor="let row of skillRows" class="skill-row">
-            <div *ngFor="let skill of row" class="skill-icon">
-                <img [src]="skill.icon" [alt]="skill.alt" />
-                <p class="skill-label">{{ skill.label }}</p>
-            </div>
-        </div>
-    </section>
+  <section class="skills-icons">
+    <div *ngFor="let row of skillRows" class="skill-row">
+      <div *ngFor="let skill of row" class="skill-icon">
+        <img [src]="skill.icon" [alt]="skill.alt" />
+        <p class="skill-label">{{ skill.label }}</p>
+      </div>
+    </div>
+  </section>
 
-    <section class="skills-text">
-        <h2>My Skills</h2>
-        <p class="skills-description">HTML, CSS, JavaScript, TypeScript, Angular, Firebase, Git, REST APIs, Scrum, Material Design, Continual Learning</p>
-    
-        <h4>Looking for <span class="highlight">another skill?</span></h4>
-        <p class="enthusiasm">
-            Reveal enthusiasm for learning new technologies and frameworks!
-        </p>
+  <section class="skills-text">
+    <h2>Skills</h2>
+    <div class="accent-line"></div>
+    <p class="skills-description">
+      Highlight your experience of working on different projects using different front-end
+      technologies (such as HTML, CSS, JavaScript, etc.) and emphasise your openness to learning and
+      adapting to new technologies. Mention the importance of continuing education to keep up with
+      the rapid changes in web development.
+    </p>
 
-        <div class="cta-section">
-          <a href="#contact" class="btn btn-primary">Get in touch</a>
-        </div>
-    </section>
+    <h4>Looking for <span class="highlight">another skill?</span></h4>
+    <p class="enthusiasm">Reveal enthusiasm for learning new technologies and frameworks!</p>
+
+    <div class="cta-section">
+      <a href="#contact" class="btn btn-primary">Get in touch</a>
+    </div>
+  </section>
 </div>
