@@ -31,7 +31,9 @@ export class Skills {
     [
       { icon: '/IconScrum.png', alt: 'scrum', label: 'Scrum' },
       { icon: '/IconMaterialDesign.png', alt: 'materialdesign', label: 'Material Design' },
-      { icon: '/IconContinuallyLearning.png', alt: 'learning', label: 'Continual Learning' },
+    ],
+    [
+      { icon: '/skills-interest.png', alt: 'learning', label: 'Continually learning' },
     ],
   ];
 
