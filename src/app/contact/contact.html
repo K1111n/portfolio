@@ -13,65 +13,99 @@
           Encourage people to contact you and describe what role you are interested in. Show that
           you will add value to their projects through your work.
         </p>
-        <p class="section-cta">Need a Frontend developer? <strong>Contact me!</strong></p>
+        <p class="section-cta">
+          Need a Frontend developer? <span class="highlight">Contact me!</span>
+        </p>
       </div>
 
       <div class="contact-right">
-        <form (submit)="onSubmit($event)" class="contact-form" #contactForm="ngForm">
-          <div class="form-group">
-            <input
-              type="text"
-              [(ngModel)]="formData.name"
-              name="name"
-              placeholder="Your name"
-              class="form-input"
-              required
-            />
+        <form (submit)="onSubmit($event)" class="contact-form">
+          <div class="form-group" [class.has-error]="nameError && nameBlurred">
+            <div class="input-wrapper">
+              <input
+                type="text"
+                [(ngModel)]="formData.name"
+                name="name"
+                placeholder="Your name"
+                class="form-input"
+                (blur)="validateName()"
+                (focus)="nameBlurred = false"
+                required
+              />
+              <span class="error-icon" *ngIf="nameError && nameBlurred">!</span>
+              <span class="success-icon" *ngIf="!nameError && formData.name">✓</span>
+            </div>
+            <div class="error-message" *ngIf="nameError && nameBlurred">Your name is required</div>
           </div>
 
-          <div class="form-group">
-            <input
-              type="email"
-              [(ngModel)]="formData.email"
-              name="email"
-              placeholder="Your email"
-              class="form-input"
-              required
-            />
+          <div class="form-group" [class.has-error]="emailError && emailBlurred">
+            <div class="input-wrapper">
+              <input
+                type="email"
+                [(ngModel)]="formData.email"
+                name="email"
+                placeholder="Your email"
+                class="form-input"
+                (blur)="validateEmail()"
+                (focus)="emailBlurred = false"
+                required
+              />
+              <span class="error-icon" *ngIf="emailError && emailBlurred">!</span>
+              <span class="success-icon" *ngIf="!emailError && formData.email">✓</span>
+            </div>
+            <div class="error-message" *ngIf="emailError && emailBlurred">
+              Your email is required
+            </div>
           </div>
 
-          <div class="form-group">
-            <textarea
-              [(ngModel)]="formData.message"
-              name="message"
-              placeholder="Your message"
-              class="form-textarea"
-              rows="6"
-              required
-            ></textarea>
+          <div class="form-group" [class.has-error]="messageError && messageBlurred">
+            <div class="input-wrapper">
+              <textarea
+                [(ngModel)]="formData.message"
+                name="message"
+                placeholder="Your message"
+                class="form-textarea"
+                rows="6"
+                (blur)="validateMessage()"
+                (focus)="validateMessage()"
+                required
+              ></textarea>
+              <span class="error-icon textarea-icon" *ngIf="messageError && messageBlurred">!</span>
+              <span class="success-icon textarea-icon" *ngIf="!messageError && formData.message"
+                >✓</span
+              >
+            </div>
+            <div class="error-message" *ngIf="messageError && messageBlurred">
+              Your message is empty
+            </div>
           </div>
 
-          <div class="privacy-checkbox">
-            <input
-              type="checkbox"
-              [(ngModel)]="privacyAccepted"
-              name="privacy"
-              id="privacy"
-              required
-            />
-            <label for="privacy">
-              I've read the <a href="/privacy-policy" class="privacy-link">privacy policy</a>
-              and agree to the processing of my data as outlined.
+          <div class="privacy-section">
+            <label class="checkbox-wrapper">
+              <input
+                type="checkbox"
+                [(ngModel)]="privacyAccepted"
+                name="privacy"
+                class="hidden-checkbox"
+              />
+              <span class="checkbox-visual"></span>
+              <span class="checkbox-text">
+                I've read the <a href="/privacy-policy" class="privacy-link">privacy policy</a>
+                and agree to the processing of my data as outlined.
+              </span>
             </label>
           </div>
 
           <div class="form-actions">
-            <button type="submit" class="submit-btn" [disabled]="!privacyAccepted">
+            <button type="submit" class="submit-btn" [disabled]="!isFormValid()">
               Send message :)
             </button>
-          </div>
-          <div>
-            <button class="scroll-top-btn" (click)="scrollToTop()" aria-label="Scroll to top">
+            <button
+              type="button"
+              class="scroll-top-btn"
+              (click)="scrollToTop()"
+              aria-label="Scroll to top"
+            >
               <img src="/contact-go-up.png" alt="go-up" />
             </button>
           </div>

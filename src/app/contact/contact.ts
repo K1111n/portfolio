@@ -8,7 +8,6 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './contact.html',
   styleUrls: ['./contact.scss']
 })
-
 export class Contact {
   formData = {
     name: '',
@@ -17,20 +16,55 @@ export class Contact {
   };
   
   privacyAccepted = false;
+  nameError = false;
+  emailError = false;
+  messageError = false;
+  nameBlurred = false;
+  emailBlurred = false;
+  messageBlurred = false;
+
+  validateName(): void {
+    this.nameBlurred = true;
+    this.nameError = !this.formData.name || this.formData.name.trim() === '';
+  }
+
+  validateEmail(): void {
+    this.emailBlurred = true;
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    this.emailError = !this.formData.email || !emailPattern.test(this.formData.email);
+  }
+
+  validateMessage(): void {
+    this.messageBlurred = true;
+    this.messageError = !this.formData.message || this.formData.message.trim() === '';
+  }
+
+  isFormValid(): boolean {
+    return (
+      this.formData.name.trim() !== '' &&
+      this.formData.email.trim() !== '' &&
+      this.formData.message.trim() !== '' &&
+      this.privacyAccepted &&
+      !this.nameError &&
+      !this.emailError &&
+      !this.messageError
+    );
+  }
 
   onSubmit(event?: Event): void {
     if (event) {
       event.preventDefault();
     }
-    if (!this.privacyAccepted) {
-      alert('Please accept the privacy policy');
+
+    this.validateName();
+    this.validateEmail();
+    this.validateMessage();
+
+    if (!this.isFormValid()) {
       return;
     }
 
-    if (!this.formData.name || !this.formData.email || !this.formData.message) {
-      alert('Please fill in all fields');
-      return;
-    }
+    console.log('Form submitted:', this.formData);
 
     this.formData = {
       name: '',
@@ -38,6 +72,12 @@ export class Contact {
       message: ''
     };
     this.privacyAccepted = false;
+    this.nameBlurred = false;
+    this.emailBlurred = false;
+    this.messageBlurred = false;
+    this.nameError = false;
+    this.emailError = false;
+    this.messageError = false;
   }
 
   scrollToTop(): void {
