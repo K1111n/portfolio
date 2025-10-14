@@ -1,6 +1,8 @@
 <section class="reference-section">
   <div class="container">
     <div class="testimonial-slider">
+      <img src="/quote-icon.png" alt="quote" class="quote-icon" />
+
       <div class="testimonial-card">
         <div class="testimonial-content">
           <p class="testimonial-text">
@@ -11,11 +13,21 @@
           </div>
         </div>
       </div>
+
+      <div class="profile-wrapper">
+        <div class="profile-border"></div>
+        <div class="profile-image">
+          <img [src]="currentTestimonial.image" [alt]="currentTestimonial.author" />
+        </div>
+      </div>
+
+      <div class="green-line"></div>
     </div>
 
     <div class="slider-navigation">
       <button class="arrow-btn prev" (click)="previousSlide()">
-        <img src="/ArrowBack.png" alt="previous" />
+        <img src="/ArrowBack.png" alt="previous" class="arrow-default" />
+        <img src="/ArrowBackCircled.png" alt="previous" class="arrow-hover" />
       </button>
 
       <div class="slider-dots">
@@ -30,7 +42,8 @@
       </div>
 
       <button class="arrow-btn next" (click)="nextSlide()">
-        <img src="/ArrowForward.png" alt="next" />
+        <img src="/ArrowForward.png" alt="next" class="arrow-default" />
+        <img src="/ArrowForwardCircled.png" alt="next" class="arrow-hover" />
       </button>
     </div>
   </div>
