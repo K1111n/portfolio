@@ -52,32 +52,17 @@ export class Contact {
   }
 
   onSubmit(event?: Event): void {
-    if (event) {
-      event.preventDefault();
-    }
-
     this.validateName();
     this.validateEmail();
     this.validateMessage();
 
     if (!this.isFormValid()) {
+      if (event) {
+        event.preventDefault();
+      }
       return;
     }
-
-    console.log('Form submitted:', this.formData);
-
-    this.formData = {
-      name: '',
-      email: '',
-      message: ''
-    };
-    this.privacyAccepted = false;
-    this.nameBlurred = false;
-    this.emailBlurred = false;
-    this.messageBlurred = false;
-    this.nameError = false;
-    this.emailError = false;
-    this.messageError = false;
+    
   }
 
   scrollToTop(): void {

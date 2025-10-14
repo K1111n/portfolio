@@ -19,7 +19,12 @@
       </div>
 
       <div class="contact-right">
-        <form (submit)="onSubmit($event)" class="contact-form">
+        <form
+          action="https://formspree.io/f/xwprwdyj"
+          method="POST"
+          (submit)="onSubmit($event)"
+          class="contact-form"
+        >
           <div class="form-group" [class.has-error]="nameError && nameBlurred">
             <div class="input-wrapper">
               <input
@@ -67,7 +72,7 @@
                 class="form-textarea"
                 rows="6"
                 (blur)="validateMessage()"
-                (focus)="validateMessage()"
+                (focus)="messageBlurred = false"
                 required
               ></textarea>
               <span class="error-icon textarea-icon" *ngIf="messageError && messageBlurred">!</span>
@@ -87,6 +92,7 @@
                 [(ngModel)]="privacyAccepted"
                 name="privacy"
                 class="hidden-checkbox"
+                required
               />
               <span class="checkbox-visual"></span>
               <span class="checkbox-text">
