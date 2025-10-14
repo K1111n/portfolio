@@ -2,15 +2,37 @@
   <div>
     <h1>Kajana<b>n</b></h1>
   </div>
+
+  <button class="burger-menu" (click)="toggleMenu()" [class.open]="menuOpen">
+    <span class="burger-line"></span>
+    <span class="burger-line"></span>
+    <span class="burger-line"></span>
+  </button>
+
   <div class="header-right">
     <nav>
-      <a href="">About me</a>
-      <a href="">Skills</a>
-      <a href="">Portfolio</a>
+      <a href="#about">About me</a>
+      <a href="#skills">Skills</a>
+      <a href="#portfolio">Portfolio</a>
     </nav>
     <div class="language-switcher">
-      <button id="DE">DE</button>
-      <button id="EN" class="active">EN</button>
+      <button id="DE" (click)="switchLanguage('de')">DE</button>
+      <button id="EN" class="active" (click)="switchLanguage('en')">EN</button>
     </div>
+  </div>
+
+  <div class="mobile-menu-overlay" [class.open]="menuOpen" (click)="toggleMenu()">
+    <nav class="mobile-nav">
+      <a href="#about" (click)="toggleMenu()">About me</a>
+      <a href="#skills" (click)="toggleMenu()">Skills</a>
+      <a href="#portfolio" (click)="toggleMenu()">Portfolio</a>
+      <a href="#contact" (click)="toggleMenu()">Contact</a>
+
+      <div class="mobile-language-switcher">
+        <button [class.active]="currentLanguage === 'en'" (click)="switchLanguage('en')">EN</button>
+        <span class="separator">/</span>
+        <button [class.active]="currentLanguage === 'de'" (click)="switchLanguage('de')">DE</button>
+      </div>
+    </nav>
   </div>
 </section>

@@ -17,7 +17,7 @@
 .footer-left {
     display: flex;
     flex-direction: column;
-    gap: 0.25rem;
+    gap: 0.5rem;
 }
 
 .logo {
@@ -35,6 +35,30 @@
     font-size: 19px;
     color: #9ca3af;
     margin: 0;
+}
+
+.legal-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+
+    .legal-link {
+        font-size: 16px;
+        color: #9ca3af;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        cursor: pointer;
+
+        &:hover {
+            color: #70E61C;
+        }
+    }
+
+    .separator {
+        color: #9ca3af;
+        font-size: 16px;
+    }
 }
 
 .footer-center {
@@ -73,6 +97,7 @@
     align-items: center;
     justify-content: center;
     transition: transform 0.2s ease, opacity 0.2s ease;
+    cursor: pointer;
 }
 
 .social-icons a:hover {
@@ -95,6 +120,10 @@
 
     .footer-left {
         align-items: center;
+    }
+
+    .legal-links {
+        justify-content: center;
     }
 
     .footer-center {
