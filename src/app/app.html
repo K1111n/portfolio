@@ -1,9 +1,14 @@
 <app-header></app-header>
-<app-hero></app-hero>
-<app-about-me></app-about-me>
-<app-skills></app-skills>
-<app-portfolio></app-portfolio>
-<app-references></app-references>
-<app-contact></app-contact>
-<app-footer></app-footer>
+
+<ng-container *ngIf="showMainContent">
+  <app-hero></app-hero>
+  <app-about-me></app-about-me>
+  <app-skills></app-skills>
+  <app-portfolio></app-portfolio>
+  <app-references></app-references>
+  <app-contact></app-contact>
+</ng-container>
+
 <router-outlet></router-outlet>
+
+<app-footer></app-footer>
