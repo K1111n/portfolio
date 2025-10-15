@@ -1,0 +1,58 @@
+{
+  "header": {
+    "aboutMe": "Über mich",
+    "skills": "Fähigkeiten",
+    "portfolio": "Portfolio",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "iAm": "Ich bin",
+    "name": "Kajanan Yoganathan",
+    "role": "FRONTEND ENTWICKLER",
+    "cta": "Lass uns reden!",
+    "scrollDown": "Nach unten scrollen"
+  },
+  "about": {
+    "title": "Über mich",
+    "intro": "Hey, ich bin Kajanan! Schreibe einige Informationen über dich, die IT-bezogen sind. Warum bist du leidenschaftlich am Programmieren? Was ist deine Inspirationsquelle für die Verbesserung deiner Programmierfähigkeiten?",
+    "cta": "Lass uns verbinden und gemeinsam etwas Großartiges schaffen!",
+    "location": "Wo befindest du dich? Bist du offen für verschiedene Arbeitsweisen, wie z.B. Remote-Arbeit oder sogar Umzug?",
+    "learning": "Zeige, dass du aufgeschlossen bist. Bist du begeistert davon, neue Technologien zu lernen und deine Fähigkeiten kontinuierlich zu verbessern?",
+    "problemSolving": "Eine kurze Beschreibung deiner Problemlösungsansätze. Lernst du aus jeder Herausforderung, während du nach der effizientesten oder elegantesten Lösung suchst? Du kannst einige Schlüsselwörter wie: analytisches Denken, Kreativität, Ausdauer und Zusammenarbeit einbeziehen."
+  },
+  "skills": {
+    "title": "Fähigkeiten",
+    "description": "Hebe deine Erfahrung bei der Arbeit an verschiedenen Projekten mit verschiedenen Frontend-Technologien (wie HTML, CSS, JavaScript usw.) hervor und betone deine Offenheit für das Lernen und Anpassen neuer Technologien. Erwähne die Bedeutung kontinuierlicher Weiterbildung, um mit den raschen Veränderungen in der Webentwicklung Schritt zu halten.",
+    "lookingFor": "Suchst du nach",
+    "anotherSkill": "einer anderen Fähigkeit?",
+    "enthusiasm": "Zeige Begeisterung für das Lernen neuer Technologien und Frameworks!",
+    "cta": "Kontakt aufnehmen"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Entdecke hier eine Auswahl meiner Arbeiten - Interagiere mit Projekten, um meine Fähigkeiten in Aktion zu sehen."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Ein Problem zu lösen?",
+    "description": "Ermutige die Leute, dich zu kontaktieren und beschreibe, welche Rolle dich interessiert. Zeige, dass du durch deine Arbeit einen Mehrwert für ihre Projekte schaffen wirst.",
+    "needDeveloper": "Brauchst du einen Frontend-Entwickler?",
+    "contactMe": "Kontaktiere mich!",
+    "namePlaceholder": "Dein Name",
+    "emailPlaceholder": "Deine E-Mail",
+    "messagePlaceholder": "Deine Nachricht",
+    "nameRequired": "Dein Name ist erforderlich",
+    "emailRequired": "Deine E-Mail ist erforderlich",
+    "messageRequired": "Deine Nachricht ist leer",
+    "privacyText": "Ich habe die",
+    "privacyLink": "Datenschutzerklärung",
+    "privacyText2": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+    "submit": "Nachricht senden :)",
+    "scrollToTop": "Nach oben scrollen"
+  },
+  "footer": {
+    "impressum": "Impressum",
+    "privacy": "Datenschutz",
+    "copyright": "© Kajanan Yoganathan 2025"
+  }
+}

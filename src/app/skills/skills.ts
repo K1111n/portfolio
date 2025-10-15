@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslocoModule } from '@jsverse/transloco';
 
 interface Skill {
   icon: string;
@@ -9,12 +10,11 @@ interface Skill {
 
 @Component({
   selector: 'app-skills',
-  imports: [CommonModule],
+  imports: [CommonModule, TranslocoModule],
   templateUrl: './skills.html',
   styleUrls: ['./skills.scss']
 })
 export class Skills {
-
   skillRows: Skill[][] = [
     [
       { icon: '/IconHtml.png', alt: 'html', label: 'HTML' },
@@ -33,8 +33,7 @@ export class Skills {
       { icon: '/IconMaterialDesign.png', alt: 'materialdesign', label: 'Material Design' },
     ],
     [
-      { icon: '/skills-interest.png', alt: 'learning', label: 'Continually learning' },
+      { icon: '/IconContinuallyLearning.png', alt: 'learning', label: 'Continually learning' },
     ],
   ];
-
 }

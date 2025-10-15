@@ -1,20 +1,20 @@
 <section class="contact-section" id="contact">
   <div class="contact-container">
     <div class="contact-header">
-      <h1 class="contact-title">Contact</h1>
+      <h1 class="contact-title">{{ 'contact.title' | transloco }}</h1>
       <div class="title-line"></div>
     </div>
 
     <div class="contact-content">
       <div class="contact-left">
         <div class="accent-line"></div>
-        <h2 class="section-title">Got a problem to solve?</h2>
+        <h2 class="section-title">{{ 'contact.subtitle' | transloco }}</h2>
         <p class="section-description">
-          Encourage people to contact you and describe what role you are interested in. Show that
-          you will add value to their projects through your work.
+          {{ 'contact.description' | transloco }}
         </p>
         <p class="section-cta">
-          Need a Frontend developer? <span class="highlight">Contact me!</span>
+          {{ 'contact.needDeveloper' | transloco }}
+          <span class="highlight">{{ 'contact.contactMe' | transloco }}</span>
         </p>
       </div>
 
@@ -31,7 +31,7 @@
                 type="text"
                 [(ngModel)]="formData.name"
                 name="name"
-                placeholder="Your name"
+                [placeholder]="'contact.namePlaceholder' | transloco"
                 class="form-input"
                 (blur)="validateName()"
                 (focus)="nameBlurred = false"
@@ -40,7 +40,9 @@
               <span class="error-icon" *ngIf="nameError && nameBlurred">!</span>
               <span class="success-icon" *ngIf="!nameError && formData.name">✓</span>
             </div>
-            <div class="error-message" *ngIf="nameError && nameBlurred">Your name is required</div>
+            <div class="error-message" *ngIf="nameError && nameBlurred">
+              {{ 'contact.nameRequired' | transloco }}
+            </div>
           </div>
 
           <div class="form-group" [class.has-error]="emailError && emailBlurred">
@@ -49,7 +51,7 @@
                 type="email"
                 [(ngModel)]="formData.email"
                 name="email"
-                placeholder="Your email"
+                [placeholder]="'contact.emailPlaceholder' | transloco"
                 class="form-input"
                 (blur)="validateEmail()"
                 (focus)="emailBlurred = false"
@@ -59,7 +61,7 @@
               <span class="success-icon" *ngIf="!emailError && formData.email">✓</span>
             </div>
             <div class="error-message" *ngIf="emailError && emailBlurred">
-              Your email is required
+              {{ 'contact.emailRequired' | transloco }}
             </div>
           </div>
 
@@ -68,7 +70,7 @@
               <textarea
                 [(ngModel)]="formData.message"
                 name="message"
-                placeholder="Your message"
+                [placeholder]="'contact.messagePlaceholder' | transloco"
                 class="form-textarea"
                 rows="6"
                 (blur)="validateMessage()"
@@ -81,7 +83,7 @@
               >
             </div>
             <div class="error-message" *ngIf="messageError && messageBlurred">
-              Your message is empty
+              {{ 'contact.messageRequired' | transloco }}
             </div>
           </div>
 
@@ -96,22 +98,24 @@
               />
               <span class="checkbox-visual"></span>
               <span class="checkbox-text">
-                I've read the
-                <a routerLink="/privacy-policy" class="privacy-link">privacy policy</a>
-                and agree to the processing of my data as outlined.
+                {{ 'contact.privacyText' | transloco }}
+                <a routerLink="/privacy-policy" class="privacy-link">{{
+                  'contact.privacyLink' | transloco
+                }}</a>
+                {{ 'contact.privacyText2' | transloco }}
               </span>
             </label>
           </div>
 
           <div class="form-actions">
             <button type="submit" class="submit-btn" [disabled]="!isFormValid()">
-              Send message :)
+              {{ 'contact.submit' | transloco }}
             </button>
             <button
               type="button"
               class="scroll-top-btn"
               (click)="scrollToTop()"
-              aria-label="Scroll to top"
+              [attr.aria-label]="'contact.scrollToTop' | transloco"
             >
               <img src="/contact-go-up.png" alt="go-up" />
             </button>

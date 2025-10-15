@@ -1,16 +1,11 @@
 <section class="portfolio-container">
-    <div class="portfolio-header">
-        <h2>Portfolio</h2>
-        <p class="">
-            Explore a selection of my work here - Interact with projects to see my skills in action.
-        </p>
-    </div>
+  <div class="portfolio-header">
+    <h2>{{ 'portfolio.title' | transloco }}</h2>
+    <p>{{ 'portfolio.subtitle' | transloco }}</p>
+  </div>
 
-    <div class="projects-list">
-        <app-project
-            *ngFor="let project of projects; let i = index"
-            [project]="project"
-            [index]="i">
-        </app-project>
-    </div>
+  <div class="projects-list">
+    <app-project *ngFor="let project of projects; let i = index" [project]="project" [index]="i">
+    </app-project>
+  </div>
 </section>

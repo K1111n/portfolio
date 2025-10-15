@@ -1,0 +1,58 @@
+{
+  "header": {
+    "aboutMe": "About me",
+    "skills": "Skills",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "hero": {
+    "iAm": "I am",
+    "name": "Kajanan Yoganathan",
+    "role": "FRONTEND DEVELOPER",
+    "cta": "Let's talk!",
+    "scrollDown": "Scroll down"
+  },
+  "about": {
+    "title": "About me",
+    "intro": "Hey there, I'm Kajanan! Write some information about yourself that is IT related. Why are you passionate about coding? What is your source of inspiration for improving your programming skills?",
+    "cta": "Let's connect and create something amazing together!",
+    "location": "Where are you located? Are you open to different ways of working, such as working remotely or even relocating?",
+    "learning": "Show that you are open-minded. Are you enthusiastic about learning new technologies and continually improving your skills?",
+    "problemSolving": "A brief description of your problem-solving approach. Do you learn from each challenge as you search for the most efficient or elegant solution? You can include some keywords like: analytical thinking, creativity, persistence and collaboration."
+  },
+  "skills": {
+    "title": "Skills",
+    "description": "Highlight your experience of working on different projects using different front-end technologies (such as HTML, CSS, JavaScript, etc.) and emphasise your openness to learning and adapting to new technologies. Mention the importance of continuing education to keep up with the rapid changes in web development.",
+    "lookingFor": "Looking for",
+    "anotherSkill": "another skill?",
+    "enthusiasm": "Reveal enthusiasm for learning new technologies and frameworks!",
+    "cta": "Get in touch"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Explore a selection of my work here - Interact with projects to see my skills in action."
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Got a problem to solve?",
+    "description": "Encourage people to contact you and describe what role you are interested in. Show that you will add value to their projects through your work.",
+    "needDeveloper": "Need a Frontend developer?",
+    "contactMe": "Contact me!",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "Your email",
+    "messagePlaceholder": "Your message",
+    "nameRequired": "Your name is required",
+    "emailRequired": "Your email is required",
+    "messageRequired": "Your message is empty",
+    "privacyText": "I've read the",
+    "privacyLink": "privacy policy",
+    "privacyText2": "and agree to the processing of my data as outlined.",
+    "submit": "Send message :)",
+    "scrollToTop": "Scroll to top"
+  },
+  "footer": {
+    "impressum": "Impressum",
+    "privacy": "Privacy Policy",
+    "copyright": "© Kajanan Yoganathan 2025"
+  }
+}

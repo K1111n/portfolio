@@ -10,22 +10,22 @@
 
   <section class="skills-text">
     <div class="title-wrapper">
-      <h2>Skills</h2>
+      <h2>{{ 'skills.title' | transloco }}</h2>
       <div class="accent-line"></div>
     </div>
 
     <p class="skills-description">
-      Highlight your experience of working on different projects using different front-end
-      technologies (such as HTML, CSS, JavaScript, etc.) and emphasise your openness to learning and
-      adapting to new technologies. Mention the importance of continuing education to keep up with
-      the rapid changes in web development.
+      {{ 'skills.description' | transloco }}
     </p>
 
-    <h4>Looking for <span class="highlight">another skill?</span></h4>
-    <p class="enthusiasm">Reveal enthusiasm for learning new technologies and frameworks!</p>
+    <h4>
+      {{ 'skills.lookingFor' | transloco }}
+      <span class="highlight">{{ 'skills.anotherSkill' | transloco }}</span>
+    </h4>
+    <p class="enthusiasm">{{ 'skills.enthusiasm' | transloco }}</p>
 
     <div class="cta-section">
-      <a href="#contact" class="btn btn-primary">Get in touch</a>
+      <a href="#contact" class="btn btn-primary">{{ 'skills.cta' | transloco }}</a>
     </div>
   </section>
 

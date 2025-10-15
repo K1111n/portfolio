@@ -11,22 +11,26 @@
 
   <div class="header-right">
     <nav>
-      <a href="#about">About me</a>
-      <a href="#skills">Skills</a>
-      <a href="#portfolio">Portfolio</a>
+      <a href="#about">{{ 'header.aboutMe' | transloco }}</a>
+      <a href="#skills">{{ 'header.skills' | transloco }}</a>
+      <a href="#portfolio">{{ 'header.portfolio' | transloco }}</a>
     </nav>
     <div class="language-switcher">
-      <button id="DE" (click)="switchLanguage('de')">DE</button>
-      <button id="EN" class="active" (click)="switchLanguage('en')">EN</button>
+      <button id="DE" [class.active]="currentLanguage === 'de'" (click)="switchLanguage('de')">
+        DE
+      </button>
+      <button id="EN" [class.active]="currentLanguage === 'en'" (click)="switchLanguage('en')">
+        EN
+      </button>
     </div>
   </div>
 
   <div class="mobile-menu-overlay" [class.open]="menuOpen" (click)="toggleMenu()">
     <nav class="mobile-nav">
-      <a href="#about" (click)="toggleMenu()">About me</a>
-      <a href="#skills" (click)="toggleMenu()">Skills</a>
-      <a href="#portfolio" (click)="toggleMenu()">Portfolio</a>
-      <a href="#contact" (click)="toggleMenu()">Contact</a>
+      <a href="#about" (click)="toggleMenu()">{{ 'header.aboutMe' | transloco }}</a>
+      <a href="#skills" (click)="toggleMenu()">{{ 'header.skills' | transloco }}</a>
+      <a href="#portfolio" (click)="toggleMenu()">{{ 'header.portfolio' | transloco }}</a>
+      <a href="#contact" (click)="toggleMenu()">{{ 'header.contact' | transloco }}</a>
 
       <div class="mobile-language-switcher">
         <button [class.active]="currentLanguage === 'en'" (click)="switchLanguage('en')">EN</button>
