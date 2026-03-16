@@ -7,4 +7,14 @@ import { TranslocoModule } from '@jsverse/transloco';
   templateUrl: './hero.html',
   styleUrl: './hero.scss'
 })
-export class Hero {}
+export class Hero {
+  scrollToContact(event: Event): void {
+    event.preventDefault();
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  scrollToAboutMe(event: Event): void {
+    event.preventDefault();
+    document.getElementById('about-me')?.scrollIntoView({ behavior: 'smooth' });
+  }
+}
