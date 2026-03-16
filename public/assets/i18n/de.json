@@ -7,7 +7,8 @@
   },
   "hero": {
     "iAm": "Ich bin",
-    "name": "Kajanan Yoganathan",
+    "firstName": "Kajanan",
+    "lastName": "Yoganathan",
     "role": "FRONTEND ENTWICKLER",
     "cta": "Lass uns reden!",
     "scrollDown": "Nach unten scrollen"
