@@ -42,7 +42,7 @@
 }
 
 .main-title {
-    font-size: 90px;
+    font-size: clamp(45px, 14.06vw, 90px);
     font-weight: 700;
     color: #FFFFFF;
     margin-bottom: 40px;
@@ -65,6 +65,73 @@
     font-weight: 500;
     color: #FFFFFF;
     margin-top: 30px;
+}
+
+@media (max-width: 1000px) {
+    .about-container {
+        padding: 60px 32px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .content-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .text-section {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .info-cards {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .info-card {
+        width: 100%;
+        box-sizing: border-box;
+
+        p {
+            max-width: calc(100vw - 64px - 73px);
+            overflow-wrap: break-word;
+            word-break: break-word;
+        }
+    }
+
+    .intro-text {
+        width: 100%;
+
+        p {
+            max-width: calc(100vw - 64px);
+            overflow-wrap: break-word;
+            word-break: break-word;
+        }
+    }
+
+    .image-section {
+        height: auto;
+    }
+
+    .image-backdrop {
+        width: 100%;
+        height: auto;
+        position: relative;
+        left: auto;
+        top: auto;
+        transform: none;
+    }
+
+    .profile-image {
+        width: 100%;
+    }
+
+    .cta-text {
+        display: none;
+    }
 }
 
 .info-cards {
