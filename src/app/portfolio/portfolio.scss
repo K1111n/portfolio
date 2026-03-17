@@ -11,13 +11,13 @@
 
     h2 {
         font-family: Poppins, sans-serif;
-        font-size: 90px;
+        font-size: clamp(45px, 25vw - 35px, 90px);
         font-weight: 700;
         color: #FFFFFF;
         line-height: 1.2;
         margin-bottom: 20px;
         position: relative;
-        padding-left: 80px;
+        padding-left: 20px;
 
         &::before {
             content: '';
@@ -37,13 +37,38 @@
         opacity: 0.9;
         max-width: 500px;
         line-height: 1.6;
-        padding-left: 80px;
+        padding-left: 20px;
     }
 }
 
 .projects-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 40px;
     padding: 0 50px;
+
+    app-project {
+        width: calc(50% - 20px);
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 800px) {
+    .portfolio-container {
+        padding: 60px 0;
+    }
+
+    .projects-list {
+        flex-direction: column;
+        padding: 0 16px;
+
+        app-project {
+            width: 100%;
+        }
+    }
+
+    .portfolio-header {
+        padding-left: 32px;
+        padding-right: 16px;
+    }
 }
