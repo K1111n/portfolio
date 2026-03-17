@@ -18,19 +18,14 @@ export class References {
 
   testimonials: Testimonial[] = [
     {
-      text: "This is an amazing service! Highly recommended.",
-      author: "John Doe",
-      image: "/no-profile-pic.png"
+      text: "Kajanan zeichnet sich durch effizienten, sauberen und gut strukturierten Code aus. Er arbeitet äußerst zuverlässig, hält Deadlines ein und findet auch unter Druck pragmatische Lösungen. Seine technische Präzision und seine ruhige, professionelle Arbeitsweise machen ihn zu einem Teammitglied, auf das man sich jederzeit verlassen kann.",
+      author: "Daniel L.",
+      image: "/assets/i18n/profile-pictures/daniel_1.png"
     },
     {
-      text: "A wonderful experience from start to finish.",
-      author: "Jane Smith",
-      image: "/no-profile-pic.png"
-    },
-    {
-      text: "Professional and efficient, couldn't ask for more.",
-      author: "Alice Johnson",
-      image: "/no-profile-pic.png"
+      text: "Wer mit Kajanan arbeitet, merkt sofort seine Zuverlässigkeit und seine starke Problemlösungsfähigkeit. Im Team hat er sich mühelos integriert und durch seine offene Art viel zur positiven Stimmung beigetragen. Die Zusammenarbeit mit ihm hat wirklich Spaß gemacht.",
+      author: "Patrick Sch.",
+      image: "/assets/i18n/profile-pictures/Proffessional_working_image.png"
     }
   ];
 
