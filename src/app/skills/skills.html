@@ -18,6 +18,9 @@
       {{ 'skills.description' | transloco }}
     </p>
 
+  </section>
+
+  <div class="skills-cta-block">
     <h4>
       {{ 'skills.lookingFor' | transloco }}
       <span class="highlight">{{ 'skills.anotherSkill' | transloco }}</span>
@@ -25,9 +28,9 @@
     <p class="enthusiasm">{{ 'skills.enthusiasm' | transloco }}</p>
 
     <div class="cta-section">
-      <a href="#contact" class="btn btn-primary">{{ 'skills.cta' | transloco }}</a>
+      <a href="#contact" (click)="scrollToContact($event)" class="btn btn-primary">{{ 'skills.cta' | transloco }}</a>
     </div>
-  </section>
+  </div>
 
   <div class="blue-shadow-skills"></div>
 </div>

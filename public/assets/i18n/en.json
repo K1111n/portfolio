@@ -23,10 +23,10 @@
   },
   "skills": {
     "title": "Skills",
-    "description": "Highlight your experience of working on different projects using different front-end technologies (such as HTML, CSS, JavaScript, etc.) and emphasise your openness to learning and adapting to new technologies. Mention the importance of continuing education to keep up with the rapid changes in web development.",
+    "description": "I've built projects with HTML, CSS, JavaScript, TypeScript, and Angular — always focused on clean, maintainable code. I adapt quickly to new tools and frameworks, and I actively keep up with the fast-moving frontend ecosystem.",
     "lookingFor": "Looking for",
     "anotherSkill": "another skill?",
-    "enthusiasm": "Reveal enthusiasm for learning new technologies and frameworks!",
+    "enthusiasm": "I'm always excited to explore new technologies — just reach out!",
     "cta": "Get in touch"
   },
   "portfolio": {

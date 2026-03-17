@@ -15,6 +15,11 @@ interface Skill {
   styleUrls: ['./skills.scss']
 })
 export class Skills {
+  scrollToContact(event: Event): void {
+    event.preventDefault();
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+  }
+
   skillRows: Skill[][] = [
     [
       { icon: '/IconHtml.png', alt: 'html', label: 'HTML' },
