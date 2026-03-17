@@ -15,11 +15,11 @@
   },
   "about": {
     "title": "Über mich",
-    "intro": "Hey, ich bin Kajanan! Schreibe einige Informationen über dich, die IT-bezogen sind. Warum bist du leidenschaftlich am Programmieren? Was ist deine Inspirationsquelle für die Verbesserung deiner Programmierfähigkeiten?",
-    "cta": "Lass uns verbinden und gemeinsam etwas Großartiges schaffen!",
-    "location": "Wo befindest du dich? Bist du offen für verschiedene Arbeitsweisen, wie z.B. Remote-Arbeit oder sogar Umzug?",
-    "learning": "Zeige, dass du aufgeschlossen bist. Bist du begeistert davon, neue Technologien zu lernen und deine Fähigkeiten kontinuierlich zu verbessern?",
-    "problemSolving": "Eine kurze Beschreibung deiner Problemlösungsansätze. Lernst du aus jeder Herausforderung, während du nach der effizientesten oder elegantesten Lösung suchst? Du kannst einige Schlüsselwörter wie: analytisches Denken, Kreativität, Ausdauer und Zusammenarbeit einbeziehen."
+    "intro": "Hey! Ich bin Kajanan und begeistere mich für Informationstechnologie und Softwareentwicklung. Programmieren motiviert mich, weil ich damit echte Probleme lösen und praktische Lösungen mit Technologie umsetzen kann. Ich freue mich daran, Ideen in funktionierende Anwendungen zu verwandeln und Software stetig zu verbessern.",
+    "cta": "Lass uns vernetzen und gemeinsam etwas Wirkungsvolles aufbauen.",
+    "location": "Ich lebe in Hamm, Nordrhein-Westfalen, und bin offen für verschiedene Arbeitsmodelle – Pendeln, Remote-Arbeit oder auch ein Umzug für die richtige Möglichkeit.",
+    "learning": "Ich bin sehr aufgeschlossen gegenüber neuen Technologien und dem Erweitern meiner Kenntnisse. Das schnelle Tempo der Tech-Welt motiviert mich, kontinuierlich zu lernen, zu experimentieren und meine Programmierfähigkeiten auszubauen. Ich bin bekannt dafür, schnell zu lernen und mich effizient an neue Tools, Frameworks und Herausforderungen anzupassen.",
+    "problemSolving": "Mein Problemlösungsansatz basiert auf analytischem Denken, Kreativität und Ausdauer. Ich zerlege komplexe Probleme gerne in kleinere Teile und finde effiziente, elegante Lösungen. Jede Herausforderung ist eine Chance zu wachsen, und ich schätze Teamarbeit und das gemeinsame Lernen sehr."
   },
   "skills": {
     "title": "Fähigkeiten",

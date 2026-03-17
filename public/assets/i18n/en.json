@@ -15,11 +15,11 @@
   },
   "about": {
     "title": "About me",
-    "intro": "Hey there, I'm Kajanan! Write some information about yourself that is IT related. Why are you passionate about coding? What is your source of inspiration for improving your programming skills?",
-    "cta": "Let's connect and create something amazing together!",
-    "location": "Where are you located? Are you open to different ways of working, such as working remotely or even relocating?",
-    "learning": "Show that you are open-minded. Are you enthusiastic about learning new technologies and continually improving your skills?",
-    "problemSolving": "A brief description of your problem-solving approach. Do you learn from each challenge as you search for the most efficient or elegant solution? You can include some keywords like: analytical thinking, creativity, persistence and collaboration."
+    "intro": "Hey there, I'm Kajanan! I'm passionate about Information Technology and software development. Coding motivates me because it allows me to solve real problems and build practical solutions with technology. I enjoy turning ideas into functional applications and constantly improving how software works.",
+    "cta": "Let's connect and build something impactful together.",
+    "location": "I am located in Hamm, North Rhine-Westphalia, Germany, and I'm open to different ways of working, including commuting, remote work, or even relocating for the right opportunity.",
+    "learning": "I'm very open-minded when it comes to learning new technologies and expanding my skill set. The fast pace of the tech world motivates me to keep learning, experimenting, and improving my programming abilities. I'm known for learning quickly and adapting efficiently to new tools, frameworks, and challenges.",
+    "problemSolving": "My problem-solving approach is based on analytical thinking, creativity, and persistence. I enjoy breaking complex problems into smaller parts and finding efficient, elegant solutions. Every challenge is an opportunity for me to grow as a developer, and I strongly value collaboration and learning from others in a team environment."
   },
   "skills": {
     "title": "Skills",
