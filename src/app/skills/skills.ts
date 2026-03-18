@@ -22,23 +22,23 @@ export class Skills {
 
   skillRows: Skill[][] = [
     [
-      { icon: '/IconHtml.png', alt: 'html', label: 'HTML' },
-      { icon: '/IconCss.png', alt: 'css', label: 'CSS' },
-      { icon: '/IconJavaScript.png', alt: 'javascript', label: 'JavaScript' },
-      { icon: '/IconTypescript.png', alt: 'typescript', label: 'TypeScript' },
+      { icon: '/assets/skills/IconHtml.png', alt: 'html', label: 'HTML' },
+      { icon: '/assets/skills/IconCss.png', alt: 'css', label: 'CSS' },
+      { icon: '/assets/skills/IconJavaScript.png', alt: 'javascript', label: 'JavaScript' },
+      { icon: '/assets/skills/IconTypescript.png', alt: 'typescript', label: 'TypeScript' },
     ],
     [
-      { icon: '/IconAngular.png', alt: 'angular', label: 'Angular' },
-      { icon: '/IconFirebase.png', alt: 'firebase', label: 'Firebase' },
-      { icon: '/IconGit.png', alt: 'git', label: 'Git' },
-      { icon: '/IconApi.png', alt: 'api', label: 'REST APIs' },
+      { icon: '/assets/skills/IconAngular.png', alt: 'angular', label: 'Angular' },
+      { icon: '/assets/skills/IconFirebase.png', alt: 'firebase', label: 'Firebase' },
+      { icon: '/assets/skills/IconGit.png', alt: 'git', label: 'Git' },
+      { icon: '/assets/skills/IconApi.png', alt: 'api', label: 'REST APIs' },
     ],
     [
-      { icon: '/IconScrum.png', alt: 'scrum', label: 'Scrum' },
-      { icon: '/IconMaterialDesign.png', alt: 'materialdesign', label: 'Material Design' },
+      { icon: '/assets/skills/IconScrum.png', alt: 'scrum', label: 'Scrum' },
+      { icon: '/assets/skills/IconMaterialDesign.png', alt: 'materialdesign', label: 'Material Design' },
     ],
     [
-      { icon: '/IconContinuallyLearning.png', alt: 'learning', label: 'Continually learning' },
+      { icon: '/assets/skills/IconContinuallyLearning.png', alt: 'learning', label: 'Continually learning' },
     ],
   ];
 }

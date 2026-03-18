@@ -223,7 +223,7 @@
     width: 24px;
     height: 24px;
     flex-shrink: 0;
-    background-image: url('/checkboxDefault.png');
+    background-image: url('/assets/contact/checkboxDefault.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -231,15 +231,15 @@
 }
 
 .checkbox-wrapper:hover .checkbox-visual {
-    background-image: url('/checkboxDefaultHovered.png');
+    background-image: url('/assets/contact/checkboxDefaultHovered.png');
 }
 
 .hidden-checkbox:checked + .checkbox-visual {
-    background-image: url('/checkBoxChecked.png');
+    background-image: url('/assets/contact/checkBoxChecked.png');
 }
 
 .checkbox-wrapper:hover .hidden-checkbox:checked + .checkbox-visual {
-    background-image: url('/checkBoxCheckedHovered.png');
+    background-image: url('/assets/contact/checkBoxCheckedHovered.png');
 }
 
 .checkbox-text {

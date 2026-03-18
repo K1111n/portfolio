@@ -18,19 +18,19 @@ export class Portfolio {
   projects: Project[] = [
     {
       title: 'El Pollo Loco',
-      image: '/LaptopPolloLoco.png'
+      image: '/assets/portfolio/LaptopPolloLoco.png'
     },
     {
       title: 'Join',
-      image: '/LaptopJoin.png'
+      image: '/assets/portfolio/LaptopJoin.png'
     },
     {
       title: 'Da Bubble',
-      image: '/LaptopDabubble.png'
+      image: '/assets/portfolio/LaptopDabubble.png'
     },
     {
       title: 'Pokedex',
-      image: '/LaptopPokedex.png'
+      image: '/assets/portfolio/LaptopPokedex.png'
     },
   ];
 }
