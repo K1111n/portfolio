@@ -212,8 +212,8 @@
     }
 
     .testimonial-card {
-        width: calc(100vw - 32px);
-        max-width: 851.5px;
+        width: 100%;
+        max-width: 75%;
         height: auto;
         min-height: 272px;
         flex-shrink: 1;
@@ -252,6 +252,12 @@
 
     .quote-icon {
         display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .testimonial-card {
+        max-width: 60%;
     }
 }
 
