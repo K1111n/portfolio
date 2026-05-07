@@ -6,11 +6,25 @@
     background: #141D2F;
     padding: 100px 60px;
     min-height: 100vh;
+    position: relative;
+}
+
+.shadow-purple {
+    position: absolute;
+    right: -150px;
+    bottom: -150px;
+    width: 700px;
+    height: 700px;
+    object-fit: contain;
+    pointer-events: none;
+    z-index: 0;
 }
 
 .contact-container {
     max-width: 1400px;
     margin: 0 auto;
+    position: relative;
+    z-index: 1;
 }
 
 .contact-header {

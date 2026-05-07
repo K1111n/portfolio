@@ -15,7 +15,6 @@
     gap: 20px 120px;
     min-height: 100vh;
     position: relative;
-    overflow: hidden;
 }
 
 .skills-icons { grid-area: icons; align-self: center; }
@@ -198,14 +197,4 @@
     .cta-section {
         text-align: center;
     }
-}
-
-.blue-shadow-skills {
-    position: absolute;
-    right: -100px;
-    bottom: -100px;
-    width: 600px;
-    height: 600px;
-    pointer-events: none;
-    z-index: 0;
 }
