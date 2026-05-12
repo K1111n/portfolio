@@ -76,8 +76,8 @@
         &::before {
             content: '';
             position: absolute;
-            left: -90px;
-            width: 70px;
+            left: -9999px;
+            width: calc(9999px - 20px);
             height: 4px;
             background: #1CDAE6;
         }
@@ -336,8 +336,8 @@
             font-size: 32px;
 
             &::before {
-                left: -28px;
-                width: 20px;
+                left: -9999px;
+                width: calc(9999px - 8px);
             }
         }
     }
