@@ -1,4 +1,4 @@
-<div class="project-card">
+<div class="project-card" (click)="project.link && openLink(project.link)">
   <div class="laptop-mockup">
     <img [src]="project.image" [alt]="project.title" />
   </div>

@@ -6,6 +6,7 @@ import { TranslocoModule } from '@jsverse/transloco';
 export interface Project {
   title: string;
   image: string;
+  link?: string;
 }
 
 @Component({
@@ -22,15 +23,16 @@ export class Portfolio {
     },
     {
       title: 'Join',
-      image: '/assets/portfolio/LaptopJoin.png'
+      image: '/assets/portfolio/LaptopJoin.png',
+      link: 'https://join-3ba5a.web.app/'
     },
     {
-      title: 'Da Bubble',
-      image: '/assets/portfolio/LaptopDabubble.png'
+      title: 'Coderr',
+      image: '/assets/portfolio/LaptopCoderr.png'
     },
     {
-      title: 'Pokedex',
-      image: '/assets/portfolio/LaptopPokedex.png'
+      title: 'Videoflix',
+      image: '/assets/portfolio/LaptopVideoflix.png'
     },
   ];
 }
