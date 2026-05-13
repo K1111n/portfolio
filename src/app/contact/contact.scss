@@ -7,6 +7,7 @@
     padding: 100px 60px;
     min-height: 100vh;
     position: relative;
+    overflow: hidden;
 }
 
 .shadow-purple {
@@ -30,9 +31,12 @@
 .contact-header {
     display: flex;
     align-items: center;
-    justify-content: center;
     margin-bottom: 80px;
-    position: relative;
+
+    &::before {
+        content: '';
+        flex: 1;
+    }
 
     .contact-title {
         font-size: 90px;
@@ -45,11 +49,20 @@
     }
 
     .title-line {
-        width: clamp(50px, calc(50vw - 250px), 500px);
+        flex: 1;
         height: 4px;
         background: #70E61C;
-        position: absolute;
-        right: -60px;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 100%;
+            width: 9999px;
+            height: 100%;
+            background: #70E61C;
+        }
     }
 }
 
@@ -140,7 +153,7 @@
     width: 100%;
     height: 50px;
     padding: 15px 50px 15px 25px;
-    background: transparent;
+    background: #141D2F;
     border: 1px solid #9747FF;
     border-radius: 10px;
     color: #FFFFFF;
@@ -164,7 +177,7 @@
     width: 100%;
     height: 202px;
     padding: 15px 50px 15px 25px;
-    background: transparent;
+    background: #141D2F;
     border: 1px solid #9747FF;
     border-radius: 10px;
     color: #FFFFFF;
@@ -310,17 +323,11 @@
     }
 
     .contact-header {
-        justify-content: center;
         margin-bottom: 40px;
 
         .contact-title {
             font-size: clamp(45px, 14.06vw, 90px);
             margin-right: 16px;
-        }
-
-        .title-line {
-            width: 80px;
-            right: -16px;
         }
     }
 
