@@ -19,7 +19,8 @@ export class Portfolio {
   projects: Project[] = [
     {
       title: 'El Pollo Loco',
-      image: '/assets/portfolio/LaptopPolloLoco.png'
+      image: '/assets/portfolio/LaptopPolloLoco.png',
+      link: 'https://jump-and-run-el-pollo-loco.netlify.app/'
     },
     {
       title: 'Join',
