@@ -122,6 +122,19 @@
     padding-right: 60px;
 }
 
+.success-message {
+    color: #70E61C;
+    font-size: 18px;
+    text-align: center;
+    padding: 60px 20px;
+    line-height: 1.6;
+}
+
+.submit-error {
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
 .contact-form {
     display: flex;
     flex-direction: column;

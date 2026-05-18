@@ -49,6 +49,9 @@
     "privacyLink": "privacy policy",
     "privacyText2": "and agree to the processing of my data as outlined.",
     "submit": "Send message :)",
+    "submitting": "Sending...",
+    "successMessage": "Your message was sent successfully! I'll get back to you soon.",
+    "submitError": "Something went wrong. Please try again.",
     "scrollToTop": "Scroll to top"
   },
   "footer": {

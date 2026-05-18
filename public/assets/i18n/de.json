@@ -49,6 +49,9 @@
     "privacyLink": "Datenschutzerklärung",
     "privacyText2": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
     "submit": "Nachricht senden :)",
+    "submitting": "Wird gesendet...",
+    "successMessage": "Ihre Nachricht wurde erfolgreich gesendet! Ich melde mich bald.",
+    "submitError": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
     "scrollToTop": "Nach oben scrollen"
   },
   "footer": {

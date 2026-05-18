@@ -53,18 +53,41 @@ export class Contact {
     );
   }
 
-  onSubmit(event?: Event): void {
+  submitted = false;
+  submitError = false;
+  isSubmitting = false;
+
+  async onSubmit(event?: Event): Promise<void> {
+    if (event) event.preventDefault();
+
     this.validateName();
     this.validateEmail();
     this.validateMessage();
 
-    if (!this.isFormValid()) {
-      if (event) {
-        event.preventDefault();
+    if (!this.isFormValid()) return;
+
+    this.isSubmitting = true;
+    this.submitError = false;
+
+    try {
+      const response = await fetch('https://formspree.io/f/xwprwdyj', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: JSON.stringify(this.formData),
+      });
+
+      if (response.ok) {
+        this.submitted = true;
+        this.formData = { name: '', email: '', message: '' };
+        this.privacyAccepted = false;
+      } else {
+        this.submitError = true;
       }
-      return;
+    } catch {
+      this.submitError = true;
+    } finally {
+      this.isSubmitting = false;
     }
-    
   }
 
   scrollToTop(): void {
