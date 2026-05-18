@@ -29,11 +29,13 @@ export class Portfolio {
     },
     {
       title: 'Coderr',
-      image: '/assets/portfolio/LaptopCoderr.png'
+      image: '/assets/portfolio/LaptopCoderr.png',
+      link: 'https://coderr-kajanan-yoganathan.netlify.app/'
     },
     {
       title: 'Videoflix',
-      image: '/assets/portfolio/LaptopVideoflix.png'
+      image: '/assets/portfolio/LaptopVideoflix.png',
+      link: 'https://videoflix-kajanan-yoganathan.netlify.app/'
     },
   ];
 }
