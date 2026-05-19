@@ -58,5 +58,73 @@
     "impressum": "Impressum",
     "privacy": "Datenschutz",
     "copyright": "© Kajanan Yoganathan 2025"
+  },
+  "references": {
+    "testimonial1": {
+      "text": "Kajanan zeichnet sich durch effizienten, sauberen und gut strukturierten Code aus. Er arbeitet äußerst zuverlässig, hält Deadlines ein und findet auch unter Druck pragmatische Lösungen. Seine technische Präzision und seine ruhige, professionelle Arbeitsweise machen ihn zu einem Teammitglied, auf das man sich jederzeit verlassen kann."
+    },
+    "testimonial2": {
+      "text": "Wer mit Kajanan arbeitet, merkt sofort seine Zuverlässigkeit und seine starke Problemlösungsfähigkeit. Im Team hat er sich mühelos integriert und durch seine offene Art viel zur positiven Stimmung beigetragen. Die Zusammenarbeit mit ihm hat wirklich Spaß gemacht."
+    }
+  },
+  "impressum": {
+    "title": "Impressum",
+    "infoTitle": "Angaben gemäß § 5 TMG:",
+    "contactTitle": "Kontakt:",
+    "responsibleTitle": "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:",
+    "professionTitle": "Berufsbezeichnung:",
+    "professionContent": "Webentwickler",
+    "disclaimerTitle": "Haftungsausschluss:",
+    "contentLiabilityTitle": "Haftung für Inhalte",
+    "contentLiabilityText": "Die Inhalte dieser Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden. Als Diensteanbieter bin ich gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG bin ich als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.",
+    "linkLiabilityTitle": "Haftung für Links",
+    "linkLiabilityText": "Mein Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte ich keinen Einfluss habe. Deshalb kann ich für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.",
+    "copyrightTitle": "Urheberrecht",
+    "copyrightText": "Die durch mich erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen meiner schriftlichen Zustimmung.",
+    "backLink": "← Zurück zur Startseite"
+  },
+  "privacyPolicy": {
+    "title": "Datenschutzerklärung",
+    "section1Title": "1. Datenschutz auf einen Blick",
+    "generalNotesTitle": "Allgemeine Hinweise",
+    "generalNotesText": "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.",
+    "dataCollectionTitle": "Datenerfassung auf dieser Website",
+    "whoResponsibleTitle": "Wer ist verantwortlich für die Datenerfassung auf dieser Website?",
+    "whoResponsibleText": "Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Impressum dieser Website entnehmen.",
+    "howWeCollectTitle": "Wie erfassen wir Ihre Daten?",
+    "howWeCollectText1": "Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z.B. um Daten handeln, die Sie in ein Kontaktformular eingeben.",
+    "howWeCollectText2": "Andere Daten werden automatisch beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z.B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs).",
+    "whyWeUseTitle": "Wofür nutzen wir Ihre Daten?",
+    "whyWeUseText": "Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden.",
+    "yourRightsTitle": "Welche Rechte haben Sie bezüglich Ihrer Daten?",
+    "yourRightsText": "Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen.",
+    "section2Title": "2. Hosting",
+    "hostingText": "Diese Website wird gehostet durch die Developer Akademie. Der Hoster erhebt in sogenannten Logfiles folgende Daten, die Ihr Browser übermittelt:",
+    "hostingItem0": "IP-Adresse",
+    "hostingItem1": "Die Adresse der vorher besuchten Website (Referer-Anfrage-Header)",
+    "hostingItem2": "Datum und Uhrzeit der Anfrage",
+    "hostingItem3": "Zeitzonendifferenz zur Greenwich Mean Time",
+    "hostingItem4": "Inhalt der Anforderung",
+    "hostingItem5": "HTTP-Statuscode",
+    "hostingItem6": "Übertragene Datenmenge",
+    "hostingItem7": "Website, von der die Anforderung kommt",
+    "hostingItem8": "Informationen zu Browser und Betriebssystem",
+    "section3Title": "3. Allgemeine Hinweise und Pflichtinformationen",
+    "privacyTitle": "Datenschutz",
+    "privacyText": "Ich nehme den Schutz Ihrer persönlichen Daten sehr ernst. Ich behandle Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.",
+    "responsiblePartyTitle": "Hinweis zur verantwortlichen Stelle",
+    "responsiblePartyText": "Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:",
+    "section4Title": "4. Datenerfassung auf dieser Website",
+    "contactFormTitle": "Kontaktformular",
+    "contactFormText1": "Wenn Sie mir per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei mir gespeichert.",
+    "contactFormText2": "Für die Verarbeitung der Daten im Kontaktformular nutze ich den Dienst Formspree (Formspree Inc., USA). Formspree verarbeitet die über das Kontaktformular übermittelten Daten (Name, E-Mail-Adresse, Nachricht) und speichert diese auf Servern in den USA.",
+    "contactFormText3": "Weitere Informationen finden Sie in der Datenschutzerklärung von Formspree:",
+    "section5Title": "5. Plugins und Tools",
+    "googleFontsTitle": "Google Fonts",
+    "googleFontsText1": "Diese Seite nutzt zur einheitlichen Darstellung von Schriftarten Google Fonts, bereitgestellt von Google. Die Google Fonts sind lokal installiert. Eine Verbindung zu Servern von Google findet dabei nicht statt.",
+    "googleFontsText2": "Weitere Informationen zu Google Fonts finden Sie unter",
+    "googleFontsText3": "und in der Datenschutzerklärung von Google:",
+    "dateInfo": "Stand dieser Datenschutzerklärung: Oktober 2025",
+    "backLink": "← Zurück zur Startseite"
   }
 }

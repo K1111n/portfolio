@@ -58,5 +58,73 @@
     "impressum": "Impressum",
     "privacy": "Privacy Policy",
     "copyright": "© Kajanan Yoganathan 2025"
+  },
+  "references": {
+    "testimonial1": {
+      "text": "Kajanan stands out for his efficient, clean, and well-structured code. He works extremely reliably, meets deadlines, and finds pragmatic solutions even under pressure. His technical precision and calm, professional working style make him a team member you can always count on."
+    },
+    "testimonial2": {
+      "text": "Anyone who works with Kajanan immediately notices his reliability and strong problem-solving skills. He integrated effortlessly into the team and contributed greatly to the positive atmosphere with his open nature. Working with him was truly enjoyable."
+    }
+  },
+  "impressum": {
+    "title": "Legal Notice",
+    "infoTitle": "Information according to § 5 TMG:",
+    "contactTitle": "Contact:",
+    "responsibleTitle": "Responsible for content according to § 55 Abs. 2 RStV:",
+    "professionTitle": "Profession:",
+    "professionContent": "Web Developer",
+    "disclaimerTitle": "Disclaimer:",
+    "contentLiabilityTitle": "Liability for Content",
+    "contentLiabilityText": "The contents of these pages were created with the utmost care. However, no guarantee can be given for the correctness, completeness, and up-to-dateness of the content. As a service provider, I am responsible for my own content on these pages in accordance with general laws pursuant to § 7 para. 1 TMG. According to §§ 8 to 10 TMG, I am not obligated as a service provider to monitor transmitted or stored third-party information or to investigate circumstances indicating illegal activity.",
+    "linkLiabilityTitle": "Liability for Links",
+    "linkLiabilityText": "My website contains links to external third-party websites over whose content I have no control. Therefore, I cannot accept any liability for this third-party content. The respective provider or operator of the linked pages is always responsible for their content.",
+    "copyrightTitle": "Copyright",
+    "copyrightText": "The content and works created by me on these pages are subject to German copyright law. Reproduction, editing, distribution, and any kind of exploitation outside the limits of copyright law require my written consent.",
+    "backLink": "← Back to Homepage"
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "section1Title": "1. Privacy at a Glance",
+    "generalNotesTitle": "General Notes",
+    "generalNotesText": "The following notes provide a simple overview of what happens to your personal data when you visit this website. Personal data is any data by which you can be personally identified.",
+    "dataCollectionTitle": "Data Collection on This Website",
+    "whoResponsibleTitle": "Who is responsible for data collection on this website?",
+    "whoResponsibleText": "Data processing on this website is carried out by the website operator. You can find their contact details in the legal notice of this website.",
+    "howWeCollectTitle": "How do we collect your data?",
+    "howWeCollectText1": "Some of your data is collected by you providing it to us. This could, for example, be data you enter in a contact form.",
+    "howWeCollectText2": "Other data is collected automatically by our IT systems when you visit the website. This is primarily technical data (e.g. internet browser, operating system, or time of page access).",
+    "whyWeUseTitle": "What do we use your data for?",
+    "whyWeUseText": "Some of the data is collected to ensure the error-free provision of the website. Other data may be used to analyze your usage behavior.",
+    "yourRightsTitle": "What rights do you have regarding your data?",
+    "yourRightsText": "You have the right at any time to receive free information about the origin, recipient, and purpose of your stored personal data. You also have the right to request the correction or deletion of this data.",
+    "section2Title": "2. Hosting",
+    "hostingText": "This website is hosted by Developer Akademie. The host collects the following data transmitted by your browser in so-called log files:",
+    "hostingItem0": "IP address",
+    "hostingItem1": "The address of the previously visited website (Referer request header)",
+    "hostingItem2": "Date and time of the request",
+    "hostingItem3": "Time zone difference to Greenwich Mean Time",
+    "hostingItem4": "Content of the request",
+    "hostingItem5": "HTTP status code",
+    "hostingItem6": "Amount of data transferred",
+    "hostingItem7": "Website from which the request originates",
+    "hostingItem8": "Information about browser and operating system",
+    "section3Title": "3. General Notes and Mandatory Information",
+    "privacyTitle": "Privacy",
+    "privacyText": "I take the protection of your personal data very seriously. I treat your personal data confidentially and in accordance with statutory data protection regulations and this privacy policy.",
+    "responsiblePartyTitle": "Note on the responsible party",
+    "responsiblePartyText": "The responsible party for data processing on this website is:",
+    "section4Title": "4. Data Collection on This Website",
+    "contactFormTitle": "Contact Form",
+    "contactFormText1": "If you send me inquiries via the contact form, your details from the inquiry form, including the contact information you provided there, will be stored with me for the purpose of processing the inquiry and in case of follow-up questions.",
+    "contactFormText2": "For processing the data in the contact form, I use the service Formspree (Formspree Inc., USA). Formspree processes the data submitted via the contact form (name, email address, message) and stores it on servers in the USA.",
+    "contactFormText3": "Further information can be found in Formspree's privacy policy:",
+    "section5Title": "5. Plugins and Tools",
+    "googleFontsTitle": "Google Fonts",
+    "googleFontsText1": "This page uses Google Fonts provided by Google for uniform font display. The Google Fonts are installed locally. A connection to Google's servers does not take place.",
+    "googleFontsText2": "For more information about Google Fonts, see",
+    "googleFontsText3": "and in Google's privacy policy:",
+    "dateInfo": "Last updated: October 2025",
+    "backLink": "← Back to Homepage"
   }
 }
