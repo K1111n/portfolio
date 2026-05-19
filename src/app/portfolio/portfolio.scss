@@ -34,6 +34,9 @@
     padding-left: 50px;
     position: relative;
     z-index: 1;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
 
     h2 {
         font-family: Poppins, sans-serif;
@@ -74,6 +77,9 @@
     padding: 0 50px;
     position: relative;
     z-index: 1;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
 
     app-project {
         width: calc(50% - 20px);
