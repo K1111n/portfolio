@@ -18,6 +18,10 @@ export class Header {
     this.currentLanguage = this.translocoService.getActiveLang();
   }
 
+  scrollTo(id: string): void {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+  }
+
   toggleMenu(): void {
     this.menuOpen = !this.menuOpen;
     

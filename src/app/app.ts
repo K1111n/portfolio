@@ -37,7 +37,7 @@ export class App {
     this.router.events
       .pipe(filter(event => event instanceof NavigationEnd))
       .subscribe((event: any) => {
-        this.showMainContent = event.url === '/' || event.url === '';
+        this.showMainContent = event.url === '/' || event.url === '' || event.url.startsWith('/#');
       });
   }
 }
