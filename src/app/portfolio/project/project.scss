@@ -107,3 +107,10 @@
     color: #70e61c;
     margin: 0;
 }
+
+@media (max-width: 1200px) {
+    .image-overlay {
+        align-items: center;
+        padding-bottom: 185px;
+    }
+}
