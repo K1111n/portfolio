@@ -24,6 +24,16 @@
           {{ 'contact.successMessage' | transloco }}
         </div>
 
+        <button
+          type="button"
+          class="scroll-top-btn"
+          *ngIf="submitted"
+          (click)="scrollToTop()"
+          [attr.aria-label]="'contact.scrollToTop' | transloco"
+        >
+          <img src="/assets/contact/contact-go-up.png" alt="go-up" />
+        </button>
+
         <form
           *ngIf="!submitted"
           (submit)="onSubmit($event)"
