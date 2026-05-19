@@ -1,25 +1,30 @@
 <div class="project-card">
-  <div class="laptop-mockup">
-    <img [src]="project.image" [alt]="project.title" />
-  </div>
-  <div class="project-links">
+  <img [src]="project.image" [alt]="project.title" class="project-image" />
+
+  <div class="image-overlay">
     <a
       *ngIf="project.githubLink"
       [href]="project.githubLink"
       target="_blank"
       rel="noopener noreferrer"
-      class="project-link github-link"
+      class="btn btn-github"
     >
-      <img src="/assets/navigation/ButtonGithubDefault.png" alt="GitHub" />
+      Github
     </a>
     <a
       *ngIf="project.link"
       [href]="project.link"
       target="_blank"
       rel="noopener noreferrer"
-      class="project-link live-link"
+      class="btn btn-live"
     >
-      Live ↗
+      Live test
     </a>
+  </div>
+
+  <div class="project-info">
+    <h3 class="project-title">{{ project.title }}</h3>
+    <p class="project-description">{{ project.descriptionKey | transloco }}</p>
+    <p class="project-tech">{{ project.technologies.join(' | ') }}</p>
   </div>
 </div>

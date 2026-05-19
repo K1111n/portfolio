@@ -31,7 +31,13 @@
   },
   "portfolio": {
     "title": "Portfolio",
-    "subtitle": "Explore a selection of my work here - Interact with projects to see my skills in action."
+    "subtitle": "Explore a selection of my work here - Interact with projects to see my skills in action.",
+    "projects": {
+      "elPolloLoco": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+      "join": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+      "coderr": "Freelance marketplace connecting customers and developers. Browse offers, place orders and manage projects in one platform.",
+      "videoflix": "Netflix-inspired video streaming platform. Browse, watch and manage videos with user authentication and responsive design."
+    }
   },
   "contact": {
     "title": "Contact",

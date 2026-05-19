@@ -1,10 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslocoModule } from '@jsverse/transloco';
 import { Project } from "../portfolio";
 
 @Component({
   selector: 'app-project',
-  imports: [CommonModule],
+  imports: [CommonModule, TranslocoModule],
   templateUrl: './project.html',
   styleUrl: './project.scss'
 })
