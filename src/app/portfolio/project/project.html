@@ -1,5 +1,25 @@
-<div class="project-card" (click)="project.link && openLink(project.link)">
+<div class="project-card">
   <div class="laptop-mockup">
     <img [src]="project.image" [alt]="project.title" />
+  </div>
+  <div class="project-links">
+    <a
+      *ngIf="project.githubLink"
+      [href]="project.githubLink"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="project-link github-link"
+    >
+      <img src="/assets/navigation/ButtonGithubDefault.png" alt="GitHub" />
+    </a>
+    <a
+      *ngIf="project.link"
+      [href]="project.link"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="project-link live-link"
+    >
+      Live ↗
+    </a>
   </div>
 </div>

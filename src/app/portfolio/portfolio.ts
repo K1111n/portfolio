@@ -7,6 +7,7 @@ export interface Project {
   title: string;
   image: string;
   link?: string;
+  githubLink?: string;
 }
 
 @Component({
@@ -20,22 +21,26 @@ export class Portfolio {
     {
       title: 'El Pollo Loco',
       image: '/assets/portfolio/LaptopPolloLoco.png',
-      link: 'https://jump-and-run-el-pollo-loco.netlify.app/'
+      link: 'https://jump-and-run-el-pollo-loco.netlify.app/',
+      githubLink: 'https://github.com/K1111n/jump-and-run-game'
     },
     {
       title: 'Join',
       image: '/assets/portfolio/LaptopJoin.png',
-      link: 'https://join-3ba5a.web.app/'
+      link: 'https://join-3ba5a.web.app/',
+      githubLink: 'https://github.com/K1111n/join'
     },
     {
       title: 'Coderr',
       image: '/assets/portfolio/LaptopCoderr.png',
-      link: 'https://coderr-kajanan-yoganathan.netlify.app/'
+      link: 'https://coderr-kajanan-yoganathan.netlify.app/',
+      githubLink: 'https://github.com/K1111n/Coderr-Backend'
     },
     {
       title: 'Videoflix',
       image: '/assets/portfolio/LaptopVideoflix.png',
-      link: 'https://videoflix-kajanan-yoganathan.netlify.app/'
+      link: 'https://videoflix-kajanan-yoganathan.netlify.app/',
+      githubLink: 'https://github.com/K1111n/videoflix_backend'
     },
   ];
 }
