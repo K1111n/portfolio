@@ -200,3 +200,16 @@
         text-align: center;
     }
 }
+
+@media (max-width: 500px) {
+    .skills-icons {
+        .skill-row {
+            gap: 20px;
+        }
+
+        .skill-icon {
+            flex: 0 0 calc(50% - 10px);
+            min-width: unset;
+        }
+    }
+}
