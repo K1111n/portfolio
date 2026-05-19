@@ -11,6 +11,7 @@ import { Subscription } from 'rxjs';
 export class Hero implements AfterViewInit, OnDestroy {
   @ViewChild('verticalText') verticalText!: ElementRef<HTMLElement>;
   @ViewChild('heroTitle') heroTitle!: ElementRef<HTMLElement>;
+  @ViewChild('lastName') lastName!: ElementRef<HTMLElement>;
 
   private translocoService = inject(TranslocoService);
   private langSub!: Subscription;
@@ -35,9 +36,19 @@ export class Hero implements AfterViewInit, OnDestroy {
     if (window.innerWidth < 1000) {
       el.style.fontSize = '';
       el.style.height = '';
+      const lastNameEl = this.lastName?.nativeElement;
+      if (lastNameEl) {
+        const yogaRect = lastNameEl.getBoundingClientRect();
+        const elRect = el.getBoundingClientRect();
+        const yogaCenterY = yogaRect.top + yogaRect.height / 2;
+        const elCenterY = elRect.top + elRect.height / 2;
+        const currentMargin = parseFloat(el.style.marginTop) || 0;
+        el.style.marginTop = (currentMargin + yogaCenterY - elCenterY) + 'px';
+      }
       return;
     }
 
+    el.style.marginTop = '';
     const h1Height = h1.offsetHeight;
     if (!h1Height) return;
 

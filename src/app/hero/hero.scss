@@ -64,6 +64,10 @@
         align-items: flex-start;
         gap: 10px;
         justify-content: center;
+
+        @media (max-width: 999px) {
+            align-items: center;
+        }
     }
 
     .vertical-text {
