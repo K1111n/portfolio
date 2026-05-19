@@ -21,12 +21,12 @@ export class References {
     {
       textKey: 'references.testimonial1.text',
       author: 'Daniel L.',
-      image: '/assets/i18n/profile-pictures/daniel_1.png'
+      image: '/assets/i18n/profile-pictures/daniel_1.jpg'
     },
     {
       textKey: 'references.testimonial2.text',
       author: 'Patrick Sch.',
-      image: '/assets/i18n/profile-pictures/Proffessional_working_image.png'
+      image: '/assets/i18n/profile-pictures/Proffessional_working_image.jpg'
     }
   ];
 
