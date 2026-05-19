@@ -121,38 +121,24 @@ a {
         transition: all 0.3s ease;
     }
 
-    &.open {
-        .burger-line:nth-child(1) {
-            transform: rotate(45deg) translateY(8px);
-        }
-
-        .burger-line:nth-child(2) {
-            opacity: 0;
-        }
-
-        .burger-line:nth-child(3) {
-            transform: rotate(-45deg) translateY(-8px);
-        }
-    }
 }
 
 .mobile-menu-overlay {
     position: fixed;
-    top: -100%;
+    top: -100vh;
     left: 0;
     width: 100%;
-    height: 100vh;
-    background: rgba(20, 29, 47, 0.98);
-    backdrop-filter: blur(10px);
+    height: calc(100vh - 74px);
+    background: #414856;
     transition: top 0.4s ease;
-    z-index: 999;
-    padding: 100px 40px 40px;
+    z-index: 998;
+    padding: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
 
     &.open {
-        top: 0;
+        top: 74px;
     }
 }
 
