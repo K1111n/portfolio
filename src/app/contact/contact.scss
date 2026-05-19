@@ -184,6 +184,14 @@
         outline: none;
         border-color: #70E61C;
     }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus {
+        -webkit-box-shadow: 0 0 0px 1000px #141D2F inset;
+        -webkit-text-fill-color: #FFFFFF;
+        caret-color: #FFFFFF;
+    }
 }
 
 .form-textarea {
@@ -208,6 +216,14 @@
     &:focus {
         outline: none;
         border-color: #70E61C;
+    }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus {
+        -webkit-box-shadow: 0 0 0px 1000px #141D2F inset;
+        -webkit-text-fill-color: #FFFFFF;
+        caret-color: #FFFFFF;
     }
 }
 
