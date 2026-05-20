@@ -51,10 +51,10 @@
         &::before {
             content: '';
             position: absolute;
-            left: -50px;
+            left: -9999px;
             top: 50%;
             transform: translateY(-50%);
-            width: 60px;
+            width: 9999px;
             height: 4px;
             background: #9747FF;
         }

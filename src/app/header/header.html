@@ -1,27 +1,29 @@
 <section class="header">
-  <div>
-    <h1>Kajana<b>n</b></h1>
-  </div>
+  <div class="header-inner">
+    <div>
+      <h1>Kajana<b>n</b></h1>
+    </div>
 
-  <button class="burger-menu" (click)="toggleMenu()" [class.open]="menuOpen">
-    <span class="burger-line"></span>
-    <span class="burger-line"></span>
-    <span class="burger-line"></span>
-  </button>
+    <button class="burger-menu" (click)="toggleMenu()" [class.open]="menuOpen">
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+    </button>
 
-  <div class="header-right">
-    <nav>
-      <a (click)="scrollTo('about-me')">{{ 'header.aboutMe' | transloco }}</a>
-      <a (click)="scrollTo('skills')">{{ 'header.skills' | transloco }}</a>
-      <a (click)="scrollTo('portfolio')">{{ 'header.portfolio' | transloco }}</a>
-    </nav>
-    <div class="language-switcher">
-      <button id="DE" [class.active]="currentLanguage === 'de'" (click)="switchLanguage('de')">
-        DE
-      </button>
-      <button id="EN" [class.active]="currentLanguage === 'en'" (click)="switchLanguage('en')">
-        EN
-      </button>
+    <div class="header-right">
+      <nav>
+        <a (click)="scrollTo('about-me')">{{ 'header.aboutMe' | transloco }}</a>
+        <a (click)="scrollTo('skills')">{{ 'header.skills' | transloco }}</a>
+        <a (click)="scrollTo('portfolio')">{{ 'header.portfolio' | transloco }}</a>
+      </nav>
+      <div class="language-switcher">
+        <button id="DE" [class.active]="currentLanguage === 'de'" (click)="switchLanguage('de')">
+          DE
+        </button>
+        <button id="EN" [class.active]="currentLanguage === 'en'" (click)="switchLanguage('en')">
+          EN
+        </button>
+      </div>
     </div>
   </div>
 

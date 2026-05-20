@@ -79,7 +79,6 @@
         align-items: center;
         gap: 30px;
         margin-bottom: 30px;
-        margin-right: -60px;
     }
 
     h2 {
@@ -94,6 +93,17 @@
         flex: 1;
         height: 4px;
         background: #3DCFB6;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 100%;
+            width: 9999px;
+            height: 100%;
+            background: #3DCFB6;
+        }
     }
 
     .skills-description {
