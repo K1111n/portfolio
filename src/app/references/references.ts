@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TranslocoModule } from '@jsverse/transloco';
+import { TranslocoPipe } from '@jsverse/transloco';
 
 interface Testimonial {
   textKey: string;
@@ -10,7 +10,7 @@ interface Testimonial {
 
 @Component({
   selector: 'app-references',
-  imports: [CommonModule, TranslocoModule],
+  imports: [CommonModule, TranslocoPipe],
   templateUrl: './references.html',
   styleUrl: './references.scss'
 })

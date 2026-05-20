@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProjectComp } from "./project/project";
-import { TranslocoModule } from '@jsverse/transloco';
+import { TranslocoPipe } from '@jsverse/transloco';
 
 export interface Project {
   title: string;
@@ -14,7 +14,7 @@ export interface Project {
 
 @Component({
   selector: 'app-portfolio',
-  imports: [ProjectComp, CommonModule, TranslocoModule],
+  imports: [ProjectComp, CommonModule, TranslocoPipe],
   templateUrl: './portfolio.html',
   styleUrl: './portfolio.scss'
 })

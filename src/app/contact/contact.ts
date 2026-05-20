@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
-import { TranslocoModule } from '@jsverse/transloco';
+import { TranslocoPipe } from '@jsverse/transloco';
 
 @Component({
   selector: 'app-contact',
-  imports: [CommonModule, FormsModule, RouterLink, TranslocoModule],
+  imports: [CommonModule, FormsModule, RouterLink, TranslocoPipe],
   templateUrl: './contact.html',
   styleUrls: ['./contact.scss']
 })

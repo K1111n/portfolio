@@ -1,10 +1,10 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TranslocoModule, TranslocoService } from '@jsverse/transloco';
+import { TranslocoPipe, TranslocoService } from '@jsverse/transloco';
 
 @Component({
   selector: 'app-header',
-  imports: [CommonModule, TranslocoModule],
+  imports: [CommonModule, TranslocoPipe],
   templateUrl: './header.html',
   styleUrls: ['./header.scss']
 })

@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { TranslocoModule } from '@jsverse/transloco';
+import { TranslocoPipe } from '@jsverse/transloco';
 
 @Component({
   selector: 'app-footer',
-  imports: [RouterLink, TranslocoModule],
+  imports: [RouterLink, TranslocoPipe],
   templateUrl: './footer.html',
   styleUrl: './footer.scss'
 })

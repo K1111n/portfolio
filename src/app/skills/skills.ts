@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TranslocoModule } from '@jsverse/transloco';
+import { TranslocoPipe } from '@jsverse/transloco';
 
 interface Skill {
   icon: string;
@@ -10,7 +10,7 @@ interface Skill {
 
 @Component({
   selector: 'app-skills',
-  imports: [CommonModule, TranslocoModule],
+  imports: [CommonModule, TranslocoPipe],
   templateUrl: './skills.html',
   styleUrls: ['./skills.scss']
 })

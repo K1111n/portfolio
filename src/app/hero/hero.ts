@@ -1,10 +1,10 @@
 import { Component, ElementRef, ViewChild, AfterViewInit, OnDestroy, inject, HostListener } from '@angular/core';
-import { TranslocoModule, TranslocoService } from '@jsverse/transloco';
+import { TranslocoPipe, TranslocoService } from '@jsverse/transloco';
 import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-hero',
-  imports: [TranslocoModule],
+  imports: [TranslocoPipe],
   templateUrl: './hero.html',
   styleUrl: './hero.scss'
 })

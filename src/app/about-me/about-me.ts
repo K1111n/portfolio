@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { TranslocoModule } from '@jsverse/transloco';
+import { TranslocoPipe } from '@jsverse/transloco';
 
 @Component({
   selector: 'app-about-me',
-  imports: [TranslocoModule],
+  imports: [TranslocoPipe],
   templateUrl: './about-me.html',
   styleUrl: './about-me.scss'
 })
