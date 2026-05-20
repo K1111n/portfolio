@@ -70,6 +70,7 @@
     display: grid;
     grid-template-columns: 45% 55%;
     gap: 60px;
+    align-items: start;
 }
 
 .contact-left {
@@ -126,7 +127,7 @@
     color: #70E61C;
     font-size: 18px;
     text-align: center;
-    padding: 60px 20px;
+    padding: 16px 0;
     line-height: 1.6;
 }
 

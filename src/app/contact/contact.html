@@ -24,9 +24,6 @@
           (submit)="onSubmit($event)"
           class="contact-form"
         >
-          <div *ngIf="submitted" class="success-message">
-            {{ 'contact.successMessage' | transloco }}
-          </div>
           <div class="form-group" [class.has-error]="nameError && nameBlurred">
             <div class="input-wrapper">
               <input
@@ -111,6 +108,10 @@
 
           <div *ngIf="submitError" class="error-message submit-error">
             {{ 'contact.submitError' | transloco }}
+          </div>
+
+          <div *ngIf="submitted" class="success-message">
+            {{ 'contact.successMessage' | transloco }}
           </div>
 
           <div class="form-actions">
