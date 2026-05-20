@@ -21,14 +21,6 @@ export interface Project {
 export class Portfolio {
   projects: Project[] = [
     {
-      title: 'El Pollo Loco',
-      image: '/assets/portfolio/LaptopPolloLoco.png',
-      descriptionKey: 'portfolio.projects.elPolloLoco',
-      technologies: ['JavaScript', 'HTML', 'CSS'],
-      link: 'https://jump-and-run-el-pollo-loco.netlify.app/',
-      githubLink: 'https://github.com/K1111n/jump-and-run-game'
-    },
-    {
       title: 'Join',
       image: '/assets/portfolio/LaptopJoin.png',
       descriptionKey: 'portfolio.projects.join',
@@ -51,6 +43,14 @@ export class Portfolio {
       technologies: ['Angular', 'TypeScript', 'Django'],
       link: 'https://videoflix-kajanan-yoganathan.netlify.app/',
       githubLink: 'https://github.com/K1111n/videoflix_backend'
+    },
+    {
+      title: 'El Pollo Loco',
+      image: '/assets/portfolio/LaptopPolloLoco.png',
+      descriptionKey: 'portfolio.projects.elPolloLoco',
+      technologies: ['JavaScript', 'HTML', 'CSS'],
+      link: 'https://jump-and-run-el-pollo-loco.netlify.app/',
+      githubLink: 'https://github.com/K1111n/jump-and-run-game'
     },
   ];
 }
