@@ -80,6 +80,10 @@ export class Contact {
         this.submitted = true;
         this.formData = { name: '', email: '', message: '' };
         this.privacyAccepted = false;
+        this.nameBlurred = false;
+        this.emailBlurred = false;
+        this.messageBlurred = false;
+        setTimeout(() => { this.submitted = false; }, 4000);
       } else {
         this.submitError = true;
       }

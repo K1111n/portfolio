@@ -20,25 +20,13 @@
       </div>
 
       <div class="contact-right">
-        <div *ngIf="submitted" class="success-message">
-          {{ 'contact.successMessage' | transloco }}
-        </div>
-
-        <button
-          type="button"
-          class="scroll-top-btn"
-          *ngIf="submitted"
-          (click)="scrollToTop()"
-          [attr.aria-label]="'contact.scrollToTop' | transloco"
-        >
-          <img src="/assets/contact/contact-go-up.png" alt="go-up" />
-        </button>
-
         <form
-          *ngIf="!submitted"
           (submit)="onSubmit($event)"
           class="contact-form"
         >
+          <div *ngIf="submitted" class="success-message">
+            {{ 'contact.successMessage' | transloco }}
+          </div>
           <div class="form-group" [class.has-error]="nameError && nameBlurred">
             <div class="input-wrapper">
               <input
@@ -126,7 +114,7 @@
           </div>
 
           <div class="form-actions">
-            <button type="submit" class="submit-btn" [disabled]="!isFormValid() || isSubmitting">
+            <button type="submit" class="submit-btn" [disabled]="!isFormValid() || isSubmitting || submitted">
               {{ isSubmitting ? ('contact.submitting' | transloco) : ('contact.submit' | transloco) }}
             </button>
             <button
