@@ -114,3 +114,28 @@
         padding-bottom: 185px;
     }
 }
+
+@media (max-width: 400px) {
+    .project-info {
+        padding: 14px 16px 16px;
+    }
+
+    .project-title {
+        font-size: 16px;
+        margin: 0 0 8px;
+    }
+
+    .project-description {
+        font-size: 11px;
+        margin: 0 0 8px;
+    }
+
+    .project-tech {
+        font-size: 11px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+}
